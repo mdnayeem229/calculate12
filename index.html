@@ -1,0 +1,233 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---------bootstrap css------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!----------bootstrap js--------->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!----------font awesome ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!------google font popins------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!--------external css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/favicon-32x32.png">
+</head>
+<body>
+     <!--------------header start-------------->
+     <header>
+        <nav>
+            <div class="logo"><img src="images/age calculator logo design.png" alt=""></div>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+            <ul id="listmenu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="https://bestpercentagecalculator.net/" target="_blank" >Percentage Calculator</a></li>
+                <li><a href="https://thesquarefootagecalculator.com/" target="_blank" >Square Footage Calculator</a> </li>
+                <li><a href="#">Contact us</a> </li>
+              
+            </ul>
+        </nav>
+    </header>
+    <!----------header end --------->
+     <!-----------top to bottom scrollbar------>
+<a href="#" class="to-top">
+    <i class="fa-solid fa-chevron-down"></i>
+</a>
+<!----------start-hero-area--------->
+    <div class="main" id="hero">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                            <div class="hero-text">
+                                <h1>Online Age Calculator</h1>
+                                <p>Calculate your age instantly with our free Online Age Calculator! Effortlessly determine your exact age in years, months, weeks, days, hours, or even seconds. Whether you're curious about how many days you’ve lived or need a quick age calculation for official purposes, this tool provides accurate and instant results. Perfect for birthdays, anniversaries, and more, it's user-friendly and accessible anytime. Discover the power of precise timekeeping with this must-have online resource!</p>
+								<div class="btn">
+                                    <a href="#" class="btn-active">Use our online age calculator to know your age instantly</a>
+                                </div>
+                                </div>
+                                <!-----------age-calculator--------->
+                                <div class="col-md-4">
+                                <div id="doc">
+                                    <!-- #BeginEditable "doctext" -->
+                                    <div class="age-calculator-bg">
+                               
+                                      <form name="calcform" autocomplete="off">
+                                        <table class="calc" style="padding-top: 20px;">
+                                          <tbody>
+                                 <tr>
+                                          <td colspan="4" class="date-text">Date of birth:</td>
+                                          </tr>
+                                 <tr>
+                                          <td>
+                                            <select id="month1" class="form-control form-control-lg">
+                                              <option>January</option>
+                                              <option>February</option>
+                                              <option>March</option>
+                                              <option class="value" selected>April</option>
+                                              <option>May</option>
+                                              <option>June</option>
+                                              <option>July</option>
+                                              <option>August</option>
+                                              <option>September</option>
+                                              <option>October</option>
+                                              <option>November</option>
+                                              <option>December</option>
+                                            </select>
+                                          </td>
+                                          <td>
+                                            <select id="days1" class="form-control form-control-lg days2" style="margin-left: 10px;">
+                                              <option>15</option>
+                                            </select>
+                                          </td> 
+                                          <td class="year">
+                                            <input type="number" step="1" id="year1" placeholder="2025" class="form-control form-control-lg year1"></td>
+                                          </tr>
+                                 <tr>
+                                            <td colspan="4">
+                                                 <div id="dp1">
+                                 </div>
+                                 </td>
+                                           </tr>
+                                 <tr>
+                                          <td colspan="4" class="date-text" style="padding-top: 10px;">Age at the date of:</td>
+                                          </tr>
+                                 <tr>
+                                          <td>
+                                            <select id="month2" class="form-control form-control-lg month2">
+                                              <option>January</option>
+                                              <option>February</option>
+                                              <option>March</option>
+                                              <option>April</option>
+                                              <option>May</option>
+                                              <option>June</option>
+                                              <option>July</option>
+                                              <option>August</option>
+                                              <option>September</option>
+                                              <option>October</option>
+                                              <option>November</option>
+                                              <option>December</option>
+                                            </select>
+                                          </td>
+                                          <td>
+                                            <select id="days2" class="form-control form-control-lg days2" style="margin-left: 10px;">
+                                              <option>15</option>
+                                            </select>
+                                          </td>
+                                          <td class="year">
+                                            <input type="number" step="1" id="year2" placeholder="2025" class="form-control form-control-lg year2"></td>
+                                          
+                                          </tr>
+                                 <tr>
+                                            <td colspan="4">
+                                                 <div id="dp2">
+                                 </div>
+                                 </td>
+                                           </tr>
+                                 <tr>
+                                            <td colspan="4" class="btn-calculate">
+                                            <button type="button" title="Calculate" class="btn btn-success" onclick="calc()"> Calculate</button>
+                                            <button type="reset" title="Reset" class="btn btn-warning" style="margin-left: 7px;"> Reset</button>
+                                            </td>
+                                           </div>
+                                           </div>
+                                           <div class="result">
+                                           </tr>
+                                 <tr>
+                                          <td colspan="4" class="age-result">Age result:</td>
+                                          </tr>
+                                 <tr>
+                                          <td colspan="4">
+                                            <div id="age" rows="6" name="age">
+                                 </div>
+                                 </td>
+                                          </tr>
+                                 </tbody>
+                                        </table>
+                                 </form>
+                                 </div>
+                                 </div>
+                                 </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                </div>
+                            <!----------end-hero-area--------->
+<!----------calculator-age-text--------->
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="calculate-text">
+        <h2>Calculate the age</h2>
+        <p>The age calculator is an essential tool to determine the correct age by calculating the difference between two dates. Whether you need to calculate the age in days, hours, minutes or seconds, the chronological age calculator computes the results accurately as you want. Calculating age becomes crucial at certain events. For example, the age reveal is mandatory when applying for admissions, public service jobs, or celebrating your birthday. The age calculator comes in handy at such events. 
+        </p><br>
+        <h2>Chronological Age calculator</h2>
+        <p>It is interesting to know how age calculation methods differ across various cultures. In the Western age calculator system, a person born 20 years ago will be 21 next year. In China, newborns are considered one year old on birthdays, and the age increases by one year on each Chinese year instead of the birthday.
+        </p><br>
+        <h2>Calculating age</h2>
+        <p>Months with different numbers of days also affect age calculation. For instance, some cultures consider the age difference between February 28 and March 31 to be one month and three days, while others consider it a whole month. For all the cultures, months, and age systems, our Age calculator provides the most accurate results</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--------footer-------->
+<section id="footer" style="padding-top: 100px;">
+  <div class="footer">
+      <div class="footer-link">
+          <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-last">
+      <div class="footer-last-link">
+          <ul>
+              <li><a href="#">Contacts |</a></li>
+<li><a href="#">Terms of use |</a></li>
+<li><a href="#"> Privacy |</a></li>
+<li><span>© 2025 Online Age Calculator</span></li>
+
+          </ul>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" defer></script>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                            
+<script src="index.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
